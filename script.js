@@ -92,7 +92,7 @@ function fetchApiData() {
             api3Data.forEach(item => {
                 const row = document.querySelector(`#data-table tbody tr:nth-child(${item.id})`);
                 const cell = document.createElement("td");
-                cell.innerText = item.completed;
+                cell.innerText = item.todos;
                 row.appendChild(cell);
             });
         })
